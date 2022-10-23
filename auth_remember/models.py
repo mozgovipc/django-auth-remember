@@ -27,7 +27,7 @@ class RememberTokenManager(models.Manager):
 
 
 class RememberToken(models.Model):
-    token_hash = models.CharField(max_length=60, blank=False, primary_key=True)
+    token_hash = models.CharField(max_length=80, blank=False, primary_key=True)
 
     created = models.DateTimeField(editable=False, blank=True,
         default=datetime.now)
